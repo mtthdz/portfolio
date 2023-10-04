@@ -2,11 +2,13 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   html {
-    --black: #0a0a0a;
+    --black: #161616;
     --white: #ffffff;
     --lightGrey: #adadad;
     --lightGreyBlur: #adadad30;
-    --darkGrey: #1e1e1e;
+    --grey: #444444;
+    --gray: var(--grey);
+    --darkGrey: #2a2a2a;
     --darkGreyBlur: #1e1e1e80;
     --red: #ff6565;
     --green: #29ffa5;
@@ -23,7 +25,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background-color: var(--black);
     color: var(--white);
-    font-family: 'Source_Sans_3', sans-serif;
+    font-family: 'inter', sans-serif;
     font-weight: 300;
     font-size: 1.4rem;
     line-height: normal;
@@ -39,13 +41,25 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   a {
+    font-size: 1.2rem;
     text-decoration: none;
-    color: var(--white);
+    color: var(--lightGrey);
 
     &:hover,
     &:focus {
-      color: var(--lightGrey);
+      color: var(--white);
       text-decoration: none;
     }
+  }
+
+  h1 {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--lightGrey);
   }
 `
