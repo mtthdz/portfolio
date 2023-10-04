@@ -1,7 +1,6 @@
-import Link from "next/link";
 import { BlogListStyles } from "./BlogList.styles";
-import BlogItem from "../BlogItem";
 import { postList } from "@/api/posts";
+import BlogPost from "../BlogPost";
 
 const BlogList = () => {
   const data = postList;
@@ -13,7 +12,7 @@ const BlogList = () => {
       <ul>
         {
           data.map((post, index) => (
-            <BlogItem title={post.title} date={post.date} key={index} />
+            <BlogPost title={post.title} date={post.date} slug={post.slug} body={post.body} key={index} />
           ))
         }
       </ul>
