@@ -9,6 +9,6 @@ export const SectionStyles = styled.section`
 
   p {
     font-size: 1.4rem;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
   }
 `

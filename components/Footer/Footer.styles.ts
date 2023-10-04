@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterStyles = styled.section`
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: right;
 
   a {

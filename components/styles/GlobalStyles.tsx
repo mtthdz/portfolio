@@ -28,7 +28,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'inter', sans-serif;
     font-weight: 300;
     font-size: 1.4rem;
-    line-height: normal;
+    line-height: 2.2rem;
   }
 
   img {
