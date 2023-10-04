@@ -1,16 +1,21 @@
 import Link from "next/link";
 import { BlogItemStyles } from "./BlogItem.styles";
 
-const BlogItem = () => {
+type PostProps = {
+  title: string,
+  date: string
+}
+
+const BlogPost = ({ title, date }: PostProps) => {
   return (
     <BlogItemStyles>
       <Link href="/" className="flex-parent">
-        <p>lorem ipsum</p>
+        <p>{title}</p>
         <div></div>
-        <p className="item-date">10/3</p>
+        <p className="item-date">{date}</p>
       </Link>
     </BlogItemStyles>
   )
 }
 
-export default BlogItem;
+export default BlogPost;
