@@ -5,7 +5,7 @@ interface Props {
   children: ReactNode;
 }
 
-export default function Layout({ children }: Props) {
+const Layout = ({ children }: Props) => {
   const [ modalVisible, setModalVisible ] = useState(false);
 
   function modalToggle() {
@@ -18,3 +18,5 @@ export default function Layout({ children }: Props) {
     </SS.Wrapper>
   )
 }
+
+export default Layout;
