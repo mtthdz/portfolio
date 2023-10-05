@@ -2,21 +2,22 @@ import Link from "next/link";
 import { ListItemStyles } from "./ListItem.styles";
 import { PostProps } from "@/types/Props";
 
+interface ListItemProps {
+  itemData: PostProps;
+}
 
-const ListItem = (props: PostProps) => {
+const ListItem = ({itemData}: ListItemProps) => {
+  const data = itemData;
+
   return (
     <ListItemStyles>
       <Link
         className="flex-parent"
-        href={{
-          pathname: `/blog/${props.slug}`,
-          query: props
-        }}
-        as={`/blog/${props.slug}`}
+        href={`/blog/${data.slug}`}
       >
-        <p>{props.title}</p>
+        <p>{data.title}</p>
         <div></div>
-        <p className="item-date">{props.date}</p>
+        <p className="item-date">{data.date}</p>
       </Link>
     </ListItemStyles>
   )

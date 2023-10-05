@@ -11,17 +11,15 @@ const BlogPage = () => {
   const router = useRouter();
   const queryData = router.query;
   const slug = queryData.id;
-  const postData: PostProps = apiData.find(post => post.slug === slug);
+  const postData: PostProps = apiData.find(post => post.slug === slug) as PostProps;
 
   // conditional rendering
-  if(!postData) {
-    return null;
-  }
+  if(!postData) return null;
 
   return (
     <>
       <Head>
-        <title>{postData.title}</title>
+        <title>mtthdz | {postData.title}</title>
       </Head>
       <BlogPageStyles>
         <div className="header">

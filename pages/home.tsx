@@ -2,7 +2,7 @@ import BlogList from "@/components/BlogList";
 import Body from "@/components/Body";
 import Footer from "@/components/Footer";
 
-const DirectoryPage = () => {
+const HomePage = () => {
   return (
     <section>
       <Body />
@@ -12,4 +12,4 @@ const DirectoryPage = () => {
   )
 }
 
-export default DirectoryPage;
+export default HomePage;

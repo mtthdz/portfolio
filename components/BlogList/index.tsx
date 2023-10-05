@@ -1,9 +1,10 @@
 import { BlogListStyles } from "./BlogList.styles";
 import { apiData } from "@/api/posts";
 import ListItem from "../ListItem";
+import { PostProps } from "@/types/Props";
 
 const BlogList = () => {
-  const data = apiData;
+  const data: PostProps[] = apiData;
 
   return (
     <BlogListStyles>
@@ -12,7 +13,7 @@ const BlogList = () => {
       <ul>
         {
           data.map((post, index) => (
-            <ListItem title={post.title} date={post.date} slug={post.slug} body={post.body} key={index} />
+            <ListItem itemData={post} key={index} />
           ))
         }
       </ul>
