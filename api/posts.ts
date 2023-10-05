@@ -1,6 +1,6 @@
 import { PostProps } from "@/types/Props";
 
-export const postList: PostProps[] = [
+export const apiData: PostProps[] = [
   {
     id: '24e003de-bede-43ab-ae0d-b183ed155cd9',
     title: 'system design',
