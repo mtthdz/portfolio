@@ -1,11 +1,10 @@
 import styled from "styled-components";
 
 export const SectionStyles = styled.section`
-  h1 {
-    font-size: 1.4rem;
-    font-weight: 300;
-    margin-bottom: 20px;
-  }
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   p {
     font-size: 1.4rem;

@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   html {
-    --black: #161616;
+    --black: #000;
     --white: #ffffff;
     --lightGrey: #adadad;
     --lightGreyBlur: #adadad30;
